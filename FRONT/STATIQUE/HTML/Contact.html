@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jarditou</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Entête-->
+    <header>
+      <div class="entete">
+        <div class="logo">
+          <img
+            src="src/jarditou_logo.jpg"
+            alt="Jardinou logo"
+            class="logo"
+            height="60"
+            width="200"
+          />
+        </div>
+        <div class="slogan"><p>Tout le jardin</p></div>
+      </div>
+      <!--Navigation-->
+      <div class="navigation">
+        <ul class="listnav">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Tableau.html">Tableau</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="promo">
+        <img
+          src="src/promotion.jpg"
+          alt="Promotion sur les lames de terrasse"
+          class="promo"
+        />
+      </div>
+    </header>
+    <section class="section">
+      <div class="group">
+        <h1>Contact</h1>
+        <br />
+        <hr />
+        <br />
+        <p>* Ces zones sont obligatoires</p>
+        <br />
+        <form action="http://bienvu.net/script.php" method="POST">
+          <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Nom* : </label>
+            <input type="text" name="nom" id="nom" required />
+            <br />
+            <label for="nom">Prénom* : </label>
+            <input type="text" name="prenom" id="prenom" required />
+            <br />
+            <br />
+            <label for="sexe">Sexe* : </label>
+            <input type="radio" name="sexe" id="sexe" value="Féminin" checked />
+            Féminin
+            <input type="radio" name="sexe" id="sexe1" value="Masculin" />
+            Masculin
+            <br />
+            <br />
+            <label for="ddn">Date de naissance* : </label>
+            <input type="date" name="ddn" id="ddn" required />
+            <br />
+            <label for="cp">Code postal* : </label>
+            <input type="text" name="cp" id="cp" required />
+            <br />
+            <label for="adresse">Adresse* : </label>
+            <input type="text" name="adresse" id="adresse" required />
+            <br />
+            <label for="ville">Ville* : </label>
+            <input type="text" name="ville" id="ville" required />
+            <br />
+            <label for="email">Email* : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="dave.loper@afpa.fr"
+              required
+            />
+            <br />
+            <br />
+            <fieldset>
+              <legend>Votre demande</legend>
+              <label for="sujet">Sujet* : </label>
+              <select name="sujet" id="sujet">
+                <option value="default" selected>
+                  Veuillez séléctionnez un sujet
+                </option>
+                <option value="commandes">Mes commandes</option>
+                <option value="questions">Mes questions sur un produit</option>
+                <option value="reclamations">Réclamations</option>
+                <option value="autres">Autres</option>
+              </select>
+              <br />
+              <label for="commentaire">Votre question* : </label>
+              <textarea
+                name="commentaire"
+                id="commentaire"
+                cols="20"
+                rows="1"
+                required
+              ></textarea>
+            </fieldset>
+            <br />
+            <br />
+            <input type="checkbox" name="traitement" id="traitement" required />
+            * J'accepte le traitement informatque de ce formulaire
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Annuler" />
+          </fieldset>
+        </form>
+      </div>
+      <avide class="aside">
+        <p>[ COLONNE DROITE]</p>
+      </avide>
+    </section>
+    <hr />
+    <footer>
+      <div class="navigation">
+        <ul class="listnav">
+          <li><a href="#Mentionlegales"> Mention légales</a></li>
+          <li><a href="#Horaires"> Horaires</a></li>
+          <li><a href="#Plandusite"> Plan du site</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
