@@ -6,7 +6,8 @@ WHERE Country = "France" ;
 
 -- EXERCICE 2 --
 USE northwind;
-SELECT ProductName AS "Produit", UnitPrice AS "Prix" FROM products
+SELECT ProductName AS "Produit", UnitPrice AS "Prix" 
+FROM products
 WHERE SupplierID = "1" ;
 
 -- EXERCICE 3 --
