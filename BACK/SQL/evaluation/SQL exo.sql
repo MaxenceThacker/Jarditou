@@ -1,6 +1,6 @@
 -- EXERCICE 1 --
 USE northwind;
-SELECT CompanyName AS "Société", ContactName AS "contact", ContactTitle AS "Fonction", Phone AS "Téléphone" 
+SELECT CompanyName AS "Société", ContactName AS "Contact", ContactTitle AS "Fonction", Phone AS "Téléphone" 
 FROM customers
 WHERE Country = "France" ;
 
@@ -38,14 +38,14 @@ ORDER BY ChA DESC;
 
 -- EXERCICE 6 (UTILISATION DE JOIN) --
 USE northwind;
-SELECT customers.Country AS Pays
+SELECT customers.Country AS "Pays"
 FROM Customers
 JOIN orders ON orders.CustomerID = customers.CustomerID
 JOIN `order details` ON `order details`.orderID = orders.OrderID
 JOIN products ON `order details`.productID = products.ProductID
 JOIN suppliers ON products.SupplierID = suppliers.SupplierID
 WHERE suppliers.CompanyName LIKE 'Exotic Liquids'
-GROUP BY Pays
+GROUP BY customers.Country;
 
 -- EXERCICE 7 --
 USE northwind;
